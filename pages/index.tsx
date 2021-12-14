@@ -4,7 +4,7 @@ import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex">
+    <div className="flex bg-gray-300 h-screen">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -14,7 +14,6 @@ const Home: NextPage = () => {
         />
       </Head>
       <Sidebar />
-      <h1 className="text-6xl font-daughter">this is a test</h1>
     </div>
   );
 };

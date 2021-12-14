@@ -43,6 +43,6 @@ export const stockFinancials = async (ticker: String, field: String) => {
   let request = await axios.get(
     `https://www.alphavantage.co/query?function=${fields}&symbol=${ticker}&apikey=${AV_API_KEY}`
   );
-  console.log("AV API", request.data);
+  logger.info(request);
   return request;
 };
