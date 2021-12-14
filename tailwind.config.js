@@ -5,7 +5,7 @@ module.exports = {
     theme: {
         extend: {
             fontfamily: {
-                helloSister: "'helloSister', serif",
+                daughter: "'Architects Daughter', cursive",
             },
         },
     },
