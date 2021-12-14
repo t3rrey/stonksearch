@@ -3,7 +3,6 @@ import Chart from "react-apexcharts";
 import chartConfig from "../services/configs/candlestick.config";
 
 const candlestick = () => {
-  const { debouncedSearch, stockData } = useContext("");
   const [chartData, setChartData] = useState({});
   const [loaded, setLoaded] = useState(false);
 

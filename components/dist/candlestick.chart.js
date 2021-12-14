@@ -4,9 +4,8 @@ var react_1 = require("react");
 var react_apexcharts_1 = require("react-apexcharts");
 var candlestick_config_1 = require("../services/configs/candlestick.config");
 var candlestick = function () {
-    var _a = react_1.useContext(""), debouncedSearch = _a.debouncedSearch, stockData = _a.stockData;
-    var _b = react_1.useState({}), chartData = _b[0], setChartData = _b[1];
-    var _c = react_1.useState(false), loaded = _c[0], setLoaded = _c[1];
+    var _a = react_1.useState({}), chartData = _a[0], setChartData = _a[1];
+    var _b = react_1.useState(false), loaded = _b[0], setLoaded = _b[1];
     if (!loaded) {
         return react_1["default"].createElement("div", { className: "" });
     }
