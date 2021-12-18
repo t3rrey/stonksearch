@@ -26,7 +26,11 @@ export const getStockData = async (
 // connects to third party news API
 // input ticker not case sensitive
 // Returns array of news objects with summary, title and source link
-
+/**
+ * 
+ * @param ticker 
+ * @returns 
+ */
 export const getNewsData = async (ticker: String) => {
   let request = await axios.get(
     `https://newsapi.org/v2/everything?q=${ticker}&from=2021-09-27&sortBy=popularity&language=english&apiKey=${process.env.NEWS_API_KEY}`
